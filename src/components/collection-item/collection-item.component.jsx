@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import './collection-review.styles.scss'
+import './collection-item.styles.scss'
 
 const CollectionItem =({id,name,price,imageUrl})=>{
    return  (
@@ -9,13 +9,12 @@ const CollectionItem =({id,name,price,imageUrl})=>{
      style={{
          backgroundImage:`url(${imageUrl})`
      }}>
-         <div className='collection-footer'>
+     </div>
+     <div className='collection-footer'>
              <span className='name'>{name}</span>
              <span className='price'>{price}</span>
-
          </div>
        
-     </div>
 
     </div>
 )
